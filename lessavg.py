@@ -1,8 +1,6 @@
 '''
 Find the number of elements which are less than the average.
 '''
-
-
 n = int(input())
 arr = input()
 l = list(map(int, arr.split(' ')))
