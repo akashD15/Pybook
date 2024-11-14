@@ -1,13 +1,15 @@
 '''
 Find the number of elements which are less than the average.
 '''
-n = int(input())
 arr = input()
 l = list(map(int, arr.split(' ')))
-count = 0
+print("Original list: "+ str(l))
+l.sort()
+print("Sorted list: "+ str(l))
 avg = sum(l)/len(l)
-for i in range(0,len(l)):
+count = 0
+for i in range(0, len(l)):
     if(l[i]<avg):
-        count += 1
-        
-print (count)
+        count += 1 
+
+print("Number of less elements than average: "+ str(count))
